@@ -1,0 +1,23 @@
+/* Minimal overrides; Vite boilerplate removed to avoid layout interference */
+#root {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.logo { height: 4.5em; padding: 1em; will-change: filter; transition: filter 300ms; }
+.logo:hover { filter: drop-shadow(0 0 2em rgba(124,135,255,0.6)); }
+.logo.react:hover { filter: drop-shadow(0 0 2em rgba(97,218,251,0.6)); }
+
+@keyframes logo-spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo { animation: logo-spin infinite 20s linear; }
+}
+
+.card { padding: 1.25em; }
+.read-the-docs { color: #888; }
