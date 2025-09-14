@@ -23,6 +23,7 @@ function Home() {
         <div className="hero-cta">
           <button className="btn primary" onClick={() => scrollToSection('projects')}>View My Work</button>
           <button className="btn" onClick={() => scrollToSection('contact')}>Get In Touch</button>
+          <a className="btn outline" href="/Anees_Ahmed_Resume.pdf" download="Anees_Ahmed_Resume.pdf">Download Resume</a>
           <a className="btn outline" href="https://www.linkedin.com/in/aneesahmed911" target="_blank" rel="noreferrer">LinkedIn</a>
         </div>
 

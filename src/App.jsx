@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import Home from './pages/Home.jsx'
+import About from './pages/About.jsx'
 import Projects from './pages/Projects.jsx'
 import Experience from './pages/Experience.jsx'
 import Education from './pages/Education.jsx'
@@ -50,6 +51,7 @@ function App() {
         </div>
         <nav id="primary-navigation" className={`nav ${open ? 'open' : ''}`}>
           <button onClick={() => scrollToSection('home')} className="nav-link">Home</button>
+          <button onClick={() => scrollToSection('about')} className="nav-link">About</button>
           <button onClick={() => scrollToSection('projects')} className="nav-link">Projects</button>
           <button onClick={() => scrollToSection('experience')} className="nav-link">Experience</button>
           <button onClick={() => scrollToSection('education')} className="nav-link">Education</button>
@@ -71,6 +73,9 @@ function App() {
       <main className="site-main">
         <section id="home">
           <Home />
+        </section>
+        <section id="about">
+          <About />
         </section>
         <section id="projects">
           <Projects />
