@@ -22,6 +22,10 @@ a:hover {
   color: #97a0ff;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   display: block;
@@ -46,6 +50,8 @@ h1 {
 .nav a { color: inherit; opacity: 0.9; padding: 8px 10px; border-radius: 8px; transition: background 180ms ease, color 180ms ease; }
 .nav a:hover { background: rgba(255,255,255,0.06); }
 .nav a.active { color: #aeb4ff; background: rgba(126, 135, 255, 0.14); }
+.nav-link { color: inherit; opacity: 0.9; padding: 8px 10px; border-radius: 8px; transition: background 180ms ease, color 180ms ease; background: none; border: none; font-size: inherit; font-family: inherit; cursor: pointer; }
+.nav-link:hover { background: rgba(255,255,255,0.06); }
 
 /* Hero */
 .hero { padding: 64px 0; }

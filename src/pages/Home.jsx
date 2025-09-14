@@ -1,4 +1,11 @@
 function Home() {
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId)
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
+
   return (
     <section className="hero">
       <div className="hero-content">
@@ -9,8 +16,8 @@ function Home() {
         </p>
 
         <div className="hero-cta">
-          <a className="btn primary" href="/projects">View Projects</a>
-          <a className="btn" href="/contact">Contact Me</a>
+          <button className="btn primary" onClick={() => scrollToSection('projects')}>View Projects</button>
+          <button className="btn" onClick={() => scrollToSection('contact')}>Contact Me</button>
           <a className="btn outline" href="https://www.linkedin.com/in/aneesahmed911" target="_blank" rel="noreferrer">LinkedIn</a>
         </div>
       </div>
