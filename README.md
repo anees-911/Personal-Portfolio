@@ -23,6 +23,12 @@
 - ⚡ **Lightning Fast** with Vite build system
 - 🧭 **Smooth Scrolling** navigation between sections
 - 🎯 **Single Page Application** for seamless user experience
+- 📊 **Statistics Dashboard** with project metrics and achievements
+- 🎯 **Skills with Progress Bars** and category filtering
+- 🗂️ **Project Filtering** by technology and category
+- 📝 **Working Contact Form** with validation and status messages
+- 📄 **Resume Download** functionality
+- 👨‍💻 **Comprehensive About Section** with professional highlights
 - 🔍 **SEO Optimized** with proper meta tags
 - ♿ **Accessible** with ARIA labels and keyboard navigation
 
@@ -148,18 +154,20 @@ npm run lint
 anees-portfolio/
 ├── 📁 public/                 # Static assets
 │   ├── _redirects            # Vercel redirects
+│   ├── Anees_Ahmed_Resume.pdf # Resume download file
 │   └── vite.svg              # Favicon
 ├── 📁 src/                   # Source code
 │   ├── 📁 assets/            # Images and icons
 │   ├── 📁 layouts/           # Layout components
 │   │   └── RootLayout.jsx    # Main layout wrapper
 │   ├── 📁 pages/             # Page components
-│   │   ├── Home.jsx          # Hero section
-│   │   ├── Projects.jsx      # Projects showcase
+│   │   ├── Home.jsx          # Hero section with statistics
+│   │   ├── About.jsx         # About section with highlights
+│   │   ├── Projects.jsx      # Projects showcase with filtering
 │   │   ├── Experience.jsx    # Work experience
 │   │   ├── Education.jsx     # Educational background
-│   │   ├── Skills.jsx        # Technical skills
-│   │   └── Contact.jsx       # Contact information
+│   │   ├── Skills.jsx        # Technical skills with progress bars
+│   │   └── Contact.jsx       # Contact form and information
 │   ├── App.jsx               # Main app component
 │   ├── main.jsx              # App entry point
 │   ├── index.css             # Global styles
